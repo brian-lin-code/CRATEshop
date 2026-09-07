@@ -1,0 +1,19 @@
+name: CRATEShop
+version: 1.0.0
+main: com.cratesmp.crateshop.CRATEShop
+api-version: '26.2'
+authors: [CRATE SMP]
+description: Configurable CRATE SMP shop with GUI, buy/sell and spawnable shop NPCs.
+softdepend: [Vault]
+commands:
+  crateshop:
+    description: CRATEShop administration command
+    usage: /crateshop <reload|npc>
+    aliases: [cshop]
+  shop:
+    description: Open the CRATE SMP shop
+    usage: /shop
+permissions:
+  crateshop.admin:
+    description: Manage CRATEShop and spawn shop NPCs
+    default: op
