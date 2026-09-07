@@ -1,55 +1,34 @@
-settings:
-  title: "&8CRATE SMP &7| &6Shop"
-  npc-name: "&6&lCRATE SHOP"
-  npc-profession: "ARMORER"
-  sell-multiplier: 0.50
-  sounds: true
-items:
-  iron_ingot:
-    material: IRON_INGOT
-    display: "&fIron Ingot"
-    buy: 1500
-    sell: 750
-    slot: 10
-  diamond:
-    material: DIAMOND
-    display: "&bDiamond"
-    buy: 4500
-    sell: 2250
-    slot: 12
-  emerald:
-    material: EMERALD
-    display: "&aEmerald"
-    buy: 7500
-    sell: 3750
-    slot: 14
-  gold_ingot:
-    material: GOLD_INGOT
-    display: "&6Gold Ingot"
-    buy: 2500
-    sell: 1250
-    slot: 16
-  coal:
-    material: COAL
-    display: "&8Coal"
-    buy: 500
-    sell: 250
-    slot: 28
-  redstone:
-    material: REDSTONE
-    display: "&cRedstone"
-    buy: 800
-    sell: 400
-    slot: 30
-  lapis_lazuli:
-    material: LAPIS_LAZULI
-    display: "&9Lapis Lazuli"
-    buy: 900
-    sell: 450
-    slot: 32
-  quartz:
-    material: QUARTZ
-    display: "&fQuartz"
-    buy: 1200
-    sell: 600
-    slot: 34
+shop:
+  title: '&8&lCRATE SMP &5Shop'
+  size: 54
+  items:
+    iron:
+      material: IRON_INGOT
+      name: '&fIron Ingot'
+      price: 1500
+      sell-price: 375
+      slot: 10
+    gold:
+      material: GOLD_INGOT
+      name: '&6Gold Ingot'
+      price: 2500
+      sell-price: 625
+      slot: 11
+    emerald:
+      material: EMERALD
+      name: '&aEmerald'
+      price: 3500
+      sell-price: 875
+      slot: 12
+    diamond:
+      material: DIAMOND
+      name: '&bDiamond'
+      price: 4500
+      sell-price: 1125
+      slot: 13
+    netherite:
+      material: NETHERITE_INGOT
+      name: '&5Netherite Ingot'
+      price: 200000
+      sell-price: 50000
+      slot: 14

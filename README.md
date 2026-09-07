@@ -1,22 +1,31 @@
 # CRATEShop 1.0.0
 
-CRATE SMP shop plugin for Purpur 26.2 / Java 25.
+CRATEShop is the GUI economy shop for CRATE SMP.
 
-## Features
-- `/shop` opens the GUI.
-- `/crateshop npc` spawns an invulnerable, non-moving shop Villager at your position.
-- Right-click the NPC to open the shop.
-- Left click buys; right click sells; Shift + click uses x16.
-- Prices and slots are fully configurable in `config.yml`.
-- Uses Vault economy when Vault + an economy provider are installed.
-- `/crateshop reload` reloads prices/config without restarting.
+## Target environment
+- Java: **25**
+- Server: **Purpur 26.2**
+- Purpur API: **26.2.build.2632-stable**
+- Build tool: Maven
+
+Purpur's official API documentation currently lists the `26.2.build.2632-stable` API, and its Maven setup uses the Purpur snapshots repository.
 
 ## Build
-Requires JDK 25 and Maven 3.9+.
-Run: `mvn clean package`
-Output: `target/CRATEShop-1.0.0.jar`
+From this folder, with Java 25 and Maven installed:
 
-## Server dependencies
-- Purpur 26.2
-- Vault
-- An economy provider compatible with Vault (for example EssentialsX Economy)
+```bash
+mvn clean package
+```
+
+The compiled plugin will be created at:
+
+```text
+target/CRATEShop-1.0.0.jar
+```
+
+## Install on Falix
+1. Upload `target/CRATEShop-1.0.0.jar` to the server's `plugins` folder.
+2. Make sure Vault is installed.
+3. Make sure an economy provider is installed and hooked into Vault.
+4. Restart the server.
+5. Test with `/shop`.
